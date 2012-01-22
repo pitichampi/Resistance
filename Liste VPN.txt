@@ -1,0 +1,65 @@
+OK, voici les basiques qu'il vous faut savoir:
+
+NB: les chances de vous faire prendre ( et de fait, de vous faire arrêter ) sont faibles, mais il y a toujours une possibilité.
+C'est pourquoi pour limiter ce risque nous utiliserons un VPN.
+ 
+Que fait un VPN ?
+Un VPN masque votre propre IP en la remplaçant par l'IP du tunnel a travers lequel vous vous connectez.
+Cela rend votre traçage difficile - mais ceci dit, pas impossible.
+ 
+VPN payants (CORRECTS):
+Nous suggérons:
+http://www.anonine.se - Ce service commence à 49 SEK/mois
+http://www.swissvpn.net - 6 CHF/mois, fiable
+http://perfect-privacy.com
+https://www.ipredator.se
+https://www.vpntunnel.se - €5/mois. Payable par ukash donc totalement anonyme.
+http://www.relakks.com
+http://www.steganos.com
+http://www.bananavpn.net > enregistrement des IPs
+http://www.strongvpn.com > enregistrement des IPs
+http://www.secureix.com
+http://www.secretsline.com
+http://www.findnot.com
+http://www.trackbuster.com
+http://www.vpngates.com
+http://www.perfect-privacy.com
+http://www.trilightzone.org
+http://www.vpnaccounts.com
+http://www.securstar.de
+http://www.witopia.net
+http://www.tiggerswelt.net
+http://www.xerobank.com > enregistrement des IPs
+ 
+VPN gratuits (NON RECOMMANDES):
+ 
+ProXPN - http://proxpn.com/
+C'est un VPN avec version d'essai gratuite.
+Enregistrez vous sur le site avec de FAUSSES informations sauf pour l'adresse e-mail afin de valider votre compte.
+Utilisez http://10minutemail.com pour une adresse e-mail temporaire.
+Une fois téléchargé, suivez la procédure d'installation et connectez vous au réseau VPN - sur cette version d'essai vous devez utiliser une IP de Miami.
+Utiliser internet devrait être très lent et vous SEREZ déconnecté puis reconnecté a l'IRC après la connexion.
+ 
+PrivateTunnel - http://privatetunnel.com
+Même installation que pour ProXPN sauf que la version d'essai est limitée en durée.
+Malgré tout, un peu plus rapide que ProXPN.
+ 
+Les programmes de DDoS de serveurs:
+ 
+http://www.hping.org/download.php - Windows/Linux
+Facile d'utilisation. Une fois telechargé pour votre système d'exploitation, installez-le et choisissez d'utiliser soit les requêtes tcp soit udp.
+http://www.youtube.com/watch?v=fagjmQi-sBY
+http://www.youtube.com/watch?v=fRxnzAWX5ag
+ 
+http://ha.ckers.org/slowloris/ - Linux
+Ce script est un script de DoS par http, vous DEVEZ avoir les packages perl d'installés
+http://www.youtube.com/watch?v=kPo8wVxsXAA
+ 
+http://hoic.99k.org/ - Windows.
+Assez similaire à hping, largement plus puissant que LOIC et très facile d'utilisation. Installez, le reste est très intuitif et évident.
+http://www.youtube.com/watch?v=qmhDQtsbPAk
+ 
+
+Vous en voulez vraiment plus niveau VPN anonymes ?
+Prenez 5 minutes pour lire ceci : Quels fournisseurs de VPN prennent VRAIMENT l'anonymat au sérieux?
+http://anonopsfr.blogspot.com/2011/10/quels-fournisseurs-vpn-prennent.html
