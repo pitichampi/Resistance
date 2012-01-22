@@ -1,0 +1,942 @@
+Page d'information sur TEMPEST
+
+  Introduction à TEMPEST
+
+   1. Qu'est-ce que TEMPEST ?
+   2. Histoire du TEMPEST
+   3. La surveillance des émanations est-elle répandue ?
+   4. Rumeurs sur TEMPEST
+   5. Information générale sur TEMPEST
+   6. EMSEC
+   7. HIJACK et NONSTOP
+   8. Sources en ligne
+   9. Brevêts
+  10. Documents en ligne
+  11. Dispositifs de surveillance
+  12. Sources pour concevoir votre protection
+
+
+
+   Qu'est-ce que TEMPEST ?
+
+   TEMPEST est un mot de code utilisé par le gouvernement américain
+   pour classifier un ensemble de standards dont l'objet est l'étude
+   et la réduction des émanations de radiations électro-magnétiques
+   provenant d'équipements électroniques.
+
+   Les micro-processeurs, les écrans, les imprimantes et une grande
+   quantité d'équipements électroniques émettent ce type de
+   radiations qui se propagent soit dans le milieu aérien, soit en
+   utilisant des conducteurs (comme des câbles électriques ou même
+   des tuyaux). Un exemple consiste à utiliser un appareil de
+   cuisine puissant près d'une télévision : vous verrez apparaître
+   des interférences sur votre écran, conséquence de ces radiations
+   électro-magnétiques. Si vous souhaitez en apprendre plus à ce
+   sujet, vous pouvez consulter les documents proposés par NoRad,
+   dont une excellente discussion sur la radiation électro-magnétique
+   et les écrans utilisés par l'informatique. Chromerics propose
+   également une page intéressante sur les interférences électro-
+   magnétiques, qui ne vous demande pas d'être un ingénieur en
+   électricité pour tout comprendre.
+
+   Aussi, bien qu'il ne soit pas spécifique au TEMPEST, un journal
+   appellé "Compliance Engineering" propose de très bons articles
+   techniques en relation avec les interférences électro-magnétiques.
+   Il y a aussi une FAQ (foire aux questions) de disponible chez
+   Compliance Engineering.
+
+   Dans les années 1950, le gouvernement était inquiet, car il était
+   techniquement possible d'intercepter à distance ces radiations
+   électro-magnétiques, et de reconstruire les signaux d'origine.
+   Si les émanations provenant d'un fer à souder ne sont pas très
+   intéressantes, celles d'un mécanisme de chiffrement militaire sont
+   autrement plus intéressantes. Si les émanations sont enregistrées,
+   puis interprétées il sera possible de "rejouer" les informations
+   capturées et de rechercher le contenu d'origine du message chiffré.
+   La recherche a montré qu'il est possible de capturer ces radiations
+   à distance, et le programme TEMPEST fut lancé en réponse à ce
+   problème (pour une perspective intéressante de l'histoire de
+   TEMPEST, consultez cette chronologie puis effectuez une recherche
+   au sujet de TEMPEST sur cette liste de distribution anglaise).
+
+   L'objectif du programme TEMPEST était d'introduire un ensemble de
+   standards, afin de réduire au possible toute "fuite" d'information
+   sous forme de radiation, qui proviendraient des dispositifs utilisés
+   pour transmettre ou traiter de l'information sensible. Les
+   ordinateurs TEMPEST ainsi que leurs périphériques (imprimantes,
+   scanners, lecteurs de bandes, souris, etc.) sont utilisés par
+   diverses agences gouvernementales et leurs collaborateurs pour
+   se protéger de la surveillance de leurs émanations. Cela consiste
+   en l'ajout d'un blindage à chaque dispositif à protéger (parfois
+   on blinde la pièce en entier plutôt que chaque dispositif) à l'aide
+   de cuivre ou des matériaux aussi conductibles (il existe aussi
+   des systèmes actifs de brouillage des signaux, vous pouvez en
+   consulter les brevêts ci-dessous).
+
+   Bruce Gabrielson, qui fait partie du "monde" TEMPEST depuis des
+   années, propose une description non-classifiée appréciable
+   qui fut présentée lors d'un séminaire de l'Air Force en 1987.
+
+   Aux Etats-Unis, les services de consulting sur le TEMPEST, les
+   tests, et la fabrication de matériels est un commerce très large,
+   que l'on estime à plus d'un milliard de dollars chaque année
+   (l'achat de matériel TEMPEST est ainsi très onéreux, et un standard
+   plus réduit appellé ZONE a été implémenté. S'il n'offre pas le
+   même niveau de sécurité que le standard TEMPEST, il est d'un
+   coût moindre et s'utilise au sein d'applications qui ne concernent
+   pas le secret défense ou assimilé).
+
+   Les standards sur les émissions ne sont pas restreints aux seuls
+   Etats-Unis. L'OTAN dispose d'un standard équivalent nommé "AMSG 720B
+   Compromising Emanations Laboratory Test Standard". En Allemagne,
+   le programme TEMPEST est administré par le "National Telecom Board"
+   et en Angleterre, l'équivalent de la NSA, le "Government
+   Communications Headquarters (GCHQ)", gère son propre programme.
+
+
+
+   Histoire du TEMPEST
+
+   Le standard de 1950 sur les émanations porte le nom de NAG1A.
+   Il fut révisé dans les années 60 et renommé FS222 puis FS222A.
+   En 1970, le standard fut largement révisé et publié sous la forme
+   d'une directive sur la sécurité TEMPEST : "National Communications
+   Security Information Memorandum 5100" plus connu sous le terme
+   "NACSIM 5100". Il fut révisé une nouvelle fois en 1974.
+
+   La politique actuelle du TEMPEST est fixée par une directive:
+   "National Communications Security Comittee Directive 4" en date
+   du 16 janvier 1981. Il explique aux diverses agences comment
+   protéger les informations classifiées contre la compromission
+   des émanations. Ce document est connu sous le nom NACSIM 5100A et
+   il est actuellement classifié.
+
+   Le "National Communications Security Instruction (NACSI) 5004
+   (classifié secret) a été publié en janvier 1984. Il détaille les
+   procédures destinées aux départements et agences afin de déterminer
+   les gardes-fous requis pour le matériel et les locaux qui traitent
+   les données relatives à la sûreté nationale des Etats-Unis.
+   Le "National Security Decision Directive 145" en date du 17
+   septembre 1984 désigne la NSA (National Security Agency) comme
+   le point focal et le gestionnaire national des communications
+   du gouvernement et de ses systèmes d'information automatisés.
+   La NSA est autorisée à étudier et approuver tous les standards,
+   techniques, systèmes et équipements dédiés à la sécurité des
+   systèmes d'information du gouvernement y compris le TEMPEST.
+   Dans ce rôle, la NSA publie des recommandations au comité qui
+   gère les télécommunications et sécurité des systèmes d'information
+   qui ont pour charge les politiques d'application TEMPEST et
+   ses guides.
+
+
+
+   La surveillance des émanations est-elle répandue ?
+
+   Il n'existe pas d'enregistrements publics qui donnent une idée
+   de la surveillance qui peut affecter les émanations électro-
+   magnétiques. Il y a toutefois des anecdotes isolées qui détaillent
+   les techniques utilisées pour l'espionnage industriel (consultez
+   par exemple "Information Warfare" par Winn Schwartau). Il existe
+   aussi un papier très intéressant, rédigé par Ian Murphy qui se
+   nomme "Who's Listening" qui raconte plusieurs histoires d'espions
+   ayant trait au TEMPEST.
+
+   Malheureusement, il n'existe pas de catégorie listant la
+   surveillance électronique au sein des rapports annuels sur le
+   crime. (Bien qu'il ne s'agisse pas d'un article spécifique au
+   TEMPEST, le journal San Jose Mercury News a publié le 11 novembre
+   1998 un article qui tente d'estimer les sommes perdues par les
+   entreprises américaines à cause de l'espionnage économique.
+
+   Mais si l'on considère le niveau technologique des pays concernés,
+   ces techniques sont probablement utilisées dans certains cas.
+
+    Menace ?
+
+   Il y a quelques sources qui nous poussent à croire qu'il existe
+   une menace, en particulier lorsque l'information provient de
+   services de renseignements étrangers. L'industrie liée au TEMPEST
+   représente chaque année plus d'un milliard de dollars. Il doit
+   donc exister une menace prise au sérieux pour justifier toutes
+   ces protections matérielles (ou bien il s'agit d'une escroquerie
+   bien menée qui rend quelques personnes très, très riches).
+
+   La portée de cette menace est renforcée par une citation en
+   provenance d'un manuel de la marine américaine qui étudie le
+   risque des "émanations compromettantes" ou "CE" : "les
+   gouvernement étrangers continuent à engager des attaques régulières
+   contre les systèmes de transmission d'informations protégés dans
+   le seul but d'exploiter des émanations compromettantes".
+   Nous imaginons que les personnes habilitées doivent disposer
+   d'un accès plus aisé à de nombreux cas de découverte d'une
+   exploitation d'émissions compromettantes.
+
+    Ou pas ?
+
+   En 1994, la comission du "Joint Security" a publié un rapport
+   destiné au secrétaire de la défense, et le directeur de la CIA
+   intitulé "Redefining Security". La section qui couvre le TEMPEST
+   est si intéressante qu'il faut la citer dans son intégralité:
+
+   TEMPEST (un acronyme pour "Transient Electromagnetic Pulse
+   Emanation Standard) est à la fois une spécification pour
+   l'équipement et un terme utilisé pour décrire les processus qui
+   visent à empêcher ces émissions compromettantes.
+
+   Le fait que les équipements électroniques tels que les ordinateurs,
+   les imprimantes et les machines à écrire électroniques produisent
+   de telles émissions est un fait connu de longue date du gouvernement
+   américain. Un attaquant utilisant un équipement disponible au sein
+   du commerce public peut surveiller et récupérer des informations
+   classifiées ou sensibles, ce sans que l'utilisateurs qui fasse
+   l'objet de cette surveillance ne puisse savoir qu'il subit une
+   perte d'information. Pour contrer cette vulnérabilité, le
+   gouvernement américain a imposé que les équipements utilisés pour
+   le traitement d'informations classifiées soit blindé ou conçu
+   pour réduire ces émissions résiduelles. Une alternative est de
+   protéger le ou les locaux qui abritent les matériels. La première
+   solution est très coûteuse, puisque un ordinateur TEMPEST coûte
+   en moyenne deux fois plus cher que sa version d'origine. La
+   protection d'un local peut également représenter un coût très
+   important. Bien que certaines agences suivent le standard TEMPEST
+   avec soin, il semble que d'autres ont eu une interprétation plus
+   souple ou interprétée du standard. Dans certains cas, une
+   combinaison redondante de deux ou trois types de protections à
+   couches multiples ont été installées sans même vérifier leur
+   application, fonctionnement et parfois sans même la moindre
+   considération du coût imposé ou de la menace potentielle.
+
+   Un gestionnaire général d'une compagnie majeure oeuvrant dans
+   l'aérospatiale a indiqué que pendant des rénovations, deux SAP
+   demandaient une séparation complète de leur mise en oeuvre, et
+   deux types de protections TEMPEST distinctes. Cette rénovation
+   a porté le coût de 1,5 millions de dollards à près de 3 millions
+   juste pour s'assurer que chaque programme ne serait pas capable
+   de détecter les émanations TEMPEST de chacun.
+
+   En 1991, un inspecteur général de la CIA a demandé l'étude des
+   besoins TEMPEST en fonction des menaces potentielles. Il a été
+   ainsi découvert que plusieurs centaines de millions de dollards
+   ont été dépensés pour protéger des machines et locaux contre
+   des vulnérabilités dont la probabilité était pratiquement nulle
+   d'exploitation. Ce rapport a galvanisé la communauté du
+   renseignement et fortement réduit les besoins domestiques de
+   protection TEMPEST.
+
+   Actuellement, de nombreuses agences utilisent des contre-mesures
+   TEMPEST au sein des Etats-Unis. Leur raisonnement est qu'un
+   gouvernement étranger ne prendra pas le risque de tenter de
+   collecter des informations TEMPEST dans un environnement hors
+   de contrôle. Toutefois, ces attaques demandent un tel degré
+   d'expertise, la proximité de la cible et un temps considérable
+   de surveillance que leur mise en pratique est rare. Certaines
+   agences utilisent des techniques de contre-mesures alternatives
+   dont le coût est bien moindre. D'autres continuent à utiliser le
+   TEMPEST de manière domestique, en pensant que les procédures
+   TEMPEST décourageront les tentatives de collecte d'information.
+   La comission reconnaît le besoin d'un programme TEMPEST à
+   l'étranger, mais pense que la menace intérieure est minime.
+   Les consultants et les officiels du gouvernement en charge de
+   la sécurité interrogés par la comission ont recommandé une plus
+   grande souplesse du standard TEMPEST. Toutefois, même avec la
+   publication d'une nouvelle politique nationale TEMPEST, les
+   procédures d'implémentation varient encore. La nouvelle politique
+   requiert que chaque autorité technique certifiée TEMPEST (CTTA)
+   conserve un enregistrement des applications TEMPEST, mais ne
+   propose aucun standard pour mesurer l'adéquation de ces autorités
+   au standard TEMPEST. La comission est inquiète car les applications
+   divergentes vont se poursuivre, ainsi que les coûts.
+
+   En l'absence d'une menace interne (domestique), toute utilisation
+   du TEMPEST et de contre-mesures au sein des Etats-Unis doit demander
+   une forte justification. Toute application du TEMPEST doit être
+   mentionée au comité exécutif de sécurité, qui doit produire un
+   rapport annuel. Ce dernier devra lister toutes les inconsistences
+   dans l'implémentation du TEMPEST et de ses coûts.
+
+   L'implémentation domestique de contre-mesures TEMPEST strictes
+   est un exemple concret de dépenses en sécurité excessives car
+   les contre-mesures ont été installées sans étude des menaces
+   sur un site, ou ses systèmes. Bien qu'il soit prudent de continuer
+   à tester et considérer le TEMPEST au sein des locaux qui doivent
+   stocker des informations sensibles, l'implémentation de ces
+   systèmes au sein même des Etats-Unis ne devrait pas être
+   normalement requis.
+
+   La comission recommande que les contre-mesures domestiques TEMPEST
+   ne soient pas employées, sauf s'il s'agit de répondre à une menace
+   spécifique sur des données, et uniquement avec l'autorisation
+   du directeur de l'agence ou du chef de service.
+   Il est également intéressant de noter que l'office de reconnaissance
+   nationale (NRO) a éliminé les besoins de TEMPEST domestique depuis
+   1992.
+
+    Peut-être
+
+   La principale difficulté à détecter ces instances de surveillance
+   des émanations est que leur mise en place est totalement passive
+   et s'effectue, en outre, à distance de leur cible. Il est assez
+   difficile de les détecter à moins d'attraper le fautif en situation
+   de "main rouge" (une blague du temps de la Guerre Froide). Et même
+   si un espion est capturé, l'événement sera probablement couvert
+   par le secret, en particulier s'il s'agit d'espionnage industriel.
+   Aussi bien le gouvernement que les entreprises privées ont une
+   longue histoire du camouflage des brèches de sécurité vis à vis
+   du public.
+
+   Comme avec tout risque, vous devez réellement peser les coûts et
+   les bénéfices. Est-il plus facile d'avoir un espion infiltré pour
+   obtenir de l'information, que de monter une attaque très technique
+   pour obtenir les mêmes informations ? Bien que certaines cibles
+   "dures" imposent ces approches techniques, l'approche classique
+   utilisée par les services de renseignement (HUMINT) sont sans
+   aucun doute utilisées bien plus souvent qu'une surveillance des
+   émanations résiduelles.
+
+
+
+   Rumeurs sur TEMPEST
+
+   A cause du manque général d'informations au sujet du TEMPEST, il
+   y a une quantité importante de fausses rumeurs qui sont associées
+   à ce sujet. Voici quelques mythes communs. Si vous avez une source
+   d'information pour me prouver le contraire, n'hésitez pas. (et
+   évitez les amis d'amis qui...).
+
+     * Il est illégal de protéger son PC contre les émanations
+       Le papier de Seline tend à le faire croire, mais il n'existe
+       aucune loi qui interdise de blinder sa machine. L'exportation
+       de matériels TEMPEST est restreinte par l'ITAR toutefois, sans
+       compter que la grande majorité des fabriquants de ces matériels
+       n'acceptent pas de vendre leur matériel en-dehors des
+       utilisateurs autorisés, généralement membres du gouvernement.
+       Mais il n'existe aucune loi qui interdise la détention ou
+       l'utilisation de machines à usage domestique blindées.
+
+     * La surveillance des émanations a été utilisée pour capturer
+       l'espion à la CIA Aldrich Ames et pendant l'incident Waco
+       Winn Schwartau semble être à l'origine de cette spéculation.
+       Bien que des techniques conventionnelles aient été utilisées,
+       il n'existe aucun rapport ou document officiel, la moindre
+       preuve, que des techniques d'une "attaque TEMPEST".
+
+     * Il est possible de concevoir un dispositif de surveillance à
+       l'aide de composants de surplus et d'électronique pour une
+       centaine de dollards
+       S'il s'agit de surveiller un simple terminal d'affichage (VDT)
+       peut-être, mais sûrement pas pour un moniteur VGA ou SVGA.
+       Si vous voulez mener une surveillance réelle à distance, le coût
+       et les matériels seront plus complexes. Il a été signalé à
+       plusieurs reprises que certaines télévisions dotées d'antennes
+       en forme "d'oreilles de lapin" parviennent à capter des fragments
+       de l'affichage d'écrans d'ordinateurs à proximité. En-dehors
+       de ces dispositifs simples, à coût réduit et presque "amateurs"
+       il n'existe pas de plans publics pour des appareils de
+       surveillance sur Internet ou ailleurs.
+
+     * Les écrans LCD des ordinateurs portables éliminent le risque
+       des attaques TEMPEST.
+       Peut-être, peut-être pas. La technologie utilisée par les
+       écrans à base de cristaux liquides (LCD) par rappport aux
+       écrans CRT classiques réduit peut-être le risque, mais nous
+       ne sommes pas prêts à le parier. Il y a plusieurs indications
+       de bruit spécifique produit par les écrans LCD, et plusieurs
+       portables "bruyants" perturbent même fortement les écrans
+       de téléviseurs. Si les portables étaient protégés contre les
+       émanations, en outre, nous n'aurions pas autant de portables
+       protégés TEMPEST sur le marché.
+
+     * TEMPEST est un acronyme
+       Peut-être. Plusieurs personnes ont tenté de traduire le
+       terme TEMPEST en quelque chose de compréhensible (comme par
+       exemple "Transient ElectroMagnetic Pulse Emanation STandard),
+       aussi bien par des sources gouvernementales que civiles.
+       La position officielle du gouvernement est de renier ces
+       informations et d'expliquer que le terme TEMPEST est un mot
+       choisi pour ce standard, et que ses lettres n'ont pas de
+       sens spécifique, chaque projet gouvernemental recevant un
+       "mot de code" du même type.
+
+     * Il n'y a pratiquement aucune information sur le TEMPEST sur le
+       Net car c'est un secret
+       Cela n'a aucun sens. Le monde ne se résume pas à Internet ou
+       à Altavista. Vous devez chercher un peu mieux.
+
+
+
+   Information générale sur TEMPEST
+
+   Sources en-ligne
+
+     * 11 août 2000 - le journal Wall Street a publié un article sur le
+       TEMPEST le 7 août 2000. Nous avons mené plusieurs entrevues par
+       email avec le journaliste, et nous avons été assez déçus par le
+       résultat final. Une grande quantité d'informations pertinentes
+       sur le TEMPEST ont été supprimées, en faveur d'informations
+       mineures et plus "sensationelles". Le 10 août, les membres de
+       Forbes ont mis en doute la crédibilité de l'article du WSJ.
+       Vous pouvez consulter leur réponse ici (nous sommes du même
+       avis, d'ailleurs). Si nous tentons d'aider les journalistes à
+       chaque fois que possible en répondant à leurs questions sur le
+       TEMPEST, il faut également comprendre qu'un détournement complet
+       des informations afin de pondre un article plus "croquant"
+       vous grille définitivement auprès des sources d'information
+       compétentes, définitivement. Nous connaissons ainsi plusieurs
+       personnes très compétentes qui ont décidé de ne plus jamais
+       fournir la moindre information à des journalistes, même la plus
+       petite citation car l'article une fois publié n'apporte aucune
+       information réelle et trompe le lectorat (et pour ceux qui
+       parmis vous sont journalistes, allez blâmer vos rédacteurs en
+       chef plutôt que de venir pleurnicher auprès de nous). C'est
+       regrettable, mais il est clair que les sources correctes et
+       volontaires vont continuer à disparaître: à journalisme
+       médiocre, information médiocre.
+
+     * Ross Anderson et Markus Kuhn (de Cambridge, Angleterre) ont
+       publié un travail que nous considérons comme la source la plus
+       aboutie en matière de recherche sur le TEMPEST de source
+       contemporaine. Soft Tempest: Hidden Data Transmission Using
+       Electromagnetic Emanations ; ce travail étudie la partie
+       logicielle du sujet, y compris les virus TEMPEST qui améliorent
+       les interceptions TEMPEST une fois leur machine cible touchée.
+       L'aspect le plus intéressant mais qui semble porter un peu trop
+       de poudre magique d'espions, est l'utilisation de polices de
+       caractères spéciales pour déjouer la surveillance des émissions.
+       Ce document .pdf est une lecture précieuse que vous ne pouvez
+       ignorer. Vous pouvez également télécharger leurs polices
+       anti-TEMPEST. Demcom, les créateurs de l'excellente suite
+       stéganographique, distribuent un éditeur texte pour Windows
+       (appellé "Zero Emission Pad") qui incorpore cette technologie
+       de fontes anti-TEMPEST.
+
+     * L'une des sources les plus distribuées d'information TEMPEST sur
+       Internet est un travail réalisé par Christopher Seline, nommé
+       "Eavesdropping On the Electromagnetic Emanations of Digital
+       Equipment: The Laws of Canada, England and the United States".
+       Il étudie les lois en relation avec la surveillance des
+       émanations électro-magnétiques contre le matériel numérique.
+       Seline postule qu'il est illégal pour un citoyen américain de
+       protéger son matériel contre ce type de surveillance, mais il
+       n'existe aucune loi qui ne l'interdise. Les autres informations
+       présentes dans son travail ont également fait l'objet de mises
+       en doute par plusieurs sources bien informées, mais ce travail
+       reste malgré tout une source d'information intéressante.
+
+     * Une autre source d'information largement distribuée est le
+       "TEMPEST in a teapot" de Grady Ward posté sur la liste des
+       Cypherpunks qui discute de contre-mesures pratique et
+       potentielles, qui se basent sur les connaissances utilisées par
+       les radio-amateurs pour réduire les interférences électro-
+       magnétiques. Une bonne source d'information technique fiable.
+
+     * "Electromagnetic Radiation from Video Display Units: A
+       Eavesdropping Risk?" par Wim van Eck, Computers and Security
+       1985, Vol. 4 ; c'est ce travail qui a porté jusqu'au public
+       le sujet de la surveillance des émissions électro-magnétiques.
+       Van Eck est un ingénieur, chercheur au Dr. Neher Laboratories
+       des Post, Telegraph and Telephone Service (PTT) des Pays-Bas.
+       Son travail, bien qu'incomplet sur plusieurs points, est
+       intéressant mais les plans demandent plusieurs modifications
+       pour qu'il soit possible de construire le dispositif détaillé
+       (format .pdf)
+
+     * "Electromagnetic Eavesdropping Machines for Christmas?",
+       Computers and Security, Vol. 7, No. 4 [1988]
+       Un article qui fait suite au travail de Van Eck. Une excellente
+       source d'information qui explique pourquoi (et quoi) certains
+       éléments manquaient dans le travail original (format .pdf et
+       sous forme HTML).
+
+     * "The Threat of Information Theft by Reception of Electromagnetic
+       Radiation from RS-232 Cables" par Peter Smulders, département
+       Electrical Engineering de l'université de technologie de
+       Eindhoven, 1990. Si beaucoup de personnes pensent que leurs
+       moniteurs produisent des émanations, ce travail montre que les
+       câbles sont égalemen une source d'informations potentielles.
+       (format .pdf)
+
+     * "Protective Measures Against Compromising Electromagnetic
+       Radiation Emitted by Video Display Terminals" par le professeur
+       Erhart Moller, de l'université de Aachen, Allemagne 1990.
+       Une bonne introduction, reproduite dans Phrack 44.
+
+     * "Data Security by Design" par George R. Wilson, publié dans
+       Progressive Architecture, Mars 1995. Ce travail offre quelques
+       faits intéressants sur les structures de blindage qui protègent
+       contre les fuites d'émissions.
+
+     * PC Week, 10 mars 1987 v4 p35(2) propose un article de Vin
+       McLella qui étudie la surveillance des émissions et aborde le
+       TEMPEST.
+
+     * TEMPEST, Industry and People Grapple with Changing Perspectives
+       Un papier publié en 1991 par le Dr. Bruce C. Gabrielson (un nom
+       très respecté dans la communauté TEMPEST) qui étudie une partie
+       des risques encourus par l'industrie. Un article préparé avec
+       soin. Gabrielson propose une série d'articles sur EMC et
+       INFOSEC en ligne, en outre.
+
+     * Winn, le M. "Information Warfare" Schwartau a mené une
+       présentation au DefCon II (le rassemblement annuel de hackers
+       à Las Vegas) en 1994. Liens au format Real Audio:
+       Winn Schwartau: Overview of Tempest and VanEck shielding and
+       radiation
+       Winn Schwartau - HERF Guns, EMP Bombs and Weapons of Mass
+       Disruption (Unclassified) - parties 1 et 2.
+
+     * TEMPEST MONITORING: A MAJOR THREAT TO SECURITY
+       Ce document semble être un travail mené par un étudiant
+       d'université. Ecrit avec soin, et assez compréhensible.
+
+     * TruthNet, exemplaire 2 (un magazine électronique) propose un
+       court article sur TEMPEST.
+
+     * COMPUTERWOCHE, 8 août 1986, numéro 34
+       Lauschangriff auf unbekannte Schwachstelle
+       Un article en allemand sur les terminaux blindés TEMPEST
+       Le résumé suivant provient de Ulf Möller:
+
+       L'article explique que les autorités savent depuis longtemps
+       que des radiations électro-magnétiques laissent fuire des
+       informations, mais que les industries et entreprises ne sont
+       au courant que depuis peu. C'est un fait généralement ignoré
+       par les centres informatiques commerciaux, et encore plus par
+       la plupart des utilisateurs. Les experts estiment que le
+       contenu d'un écran peut être lu à distance à plus d'un km,
+       et jusqu'à 300 mètres avec de l'équipement amateur. SCS GmbH
+       offre une série de recommandations sur les moniteurs à basse
+       production de radiations qu'ils ont étudié. La protection des
+       pièces à l'aide de cages de Faraday est expliquée. La protection
+       d'une mmachine, en produisant l'équivalent d'une cage de
+       Faraday, existe mais n'est pas directement disponible pour
+       le public. Depuis le 1er mars de cette année, le ministère
+       de l'intérieur n'utilise que du matériel TEMPEST approuvés
+       par le ZfCH (l'autorité centrale en charge du chiffrement,
+       autrefois ancêtre du BSI). Les fabriquants de ces produits
+       doivent maintenir le secret et ne fournir ces matériels qu'aux
+       seules autorités. Ericsson est en tête du marché avec sa
+       production d'écrans et terminaux blindés, en proposant une
+       version spéciale du moniteur S41, dont ils tirent chaque année
+       près de 10 millions de DM. Ils auraient souhaité en vendre
+       plus, mais ils ne sont pas autorisés à vendre ce matériel
+       au public...
+     
+     * "Illegal Communications Interception Equipment was destined
+       for Vietnam" (iPartnership)
+
+       9 juillet 1999
+       iDEFENSE
+       par Bill Pietrucha
+
+       Le Vietnam était la destination finale prévue pour un ensemble
+       d'équipements d'interception des communications américain,
+       matériel classifié, selon iPartnership. Shalom Shaphyr, arrêté
+       en début de semaine, détenait ce matériel et souhaitait
+       vendre ce matériel d'interception en falsifiant sa nature
+       au sein des documents d'exportation. Le matériel devait
+       parvenir à un allié de l'OTAN, puis transiter via Israël
+       avant d'arriver finalement au Vietnam.
+
+       L'équipement d'interception informatique TEMPEST, autrement
+       connu sous la dénomination de "intercepteur de récepteur
+       vidéo" est considéré comme du matériel sensible protégé par
+       l'ITAR (International Traffic in Arms Regulation) et ne peut
+       pas être exporté vers le Vietnam sans autorisation.
+
+       Aux Etats-Unis, la cour du district est de l'Etat de Virginie
+       a demandé la détention du citoyen israélien Shaphyr, qui
+       vit aux Etats-Unis sous un visa destiné aux affaires,
+       jusqu'au 20 juillet afin de donner à ses avocats assez de
+       temps pour étudier les charges retenues.
+
+       Shaphyr ne peut quitter la ville d'Alexandrie et son centre
+       de détention jusqu'au 20 juillet, date prévue pour son
+       audition auprès du juge.
+
+       Au sein des documents proposés à la cour, l'agent spécial du
+       FBI Christian Zajac a témoigné contre Shaphyr, "à la recherche
+       de matériel de surveillance TEMPEST" capable de capturer à
+       distance les émanations d'ordinateurs. Shaphyr a expliqué que
+       ce matériel était destiné à la capture de l'affichage
+       d'ordinateurs situés "à une distance de quelques dizaines
+       de pieds à quelques centaines de pieds".
+
+       Zajac, un agent spécial du FBI depuis deux ans, a expliqué
+       à la cour que Shaphyr a indiqué que le gouvernement du
+       Vietnam pensait utiliser ce matériel dans le cadre d'un
+       "joint venture". Accompagnant l'équipement, Zajac a montré
+       à la cour que Shaphyr avait prévu d'entraîner les futurs
+       utilisateurs du système par des vietnamiens.
+
+       iPARTNERSHIP a pu apprendre que Shaphyr dispose de locaux
+       commerciaux au Vietnam et en Angleterre, qu'il est un
+       pilote certifié par la FAA, ingénieur de vol et navigateur
+       listé avec une adresse à Ho Chu Minh City, Vietnam.
+
+       Zajac a indiqué que l'investigation, conjointement menée
+       par le FBI et les services des douanes, a débuté en novembre
+       1998. Elle aura conduit à l'arrestation de Shaphyr le
+       mercredi dernier, après l'avoir trompé et fait payer un
+       agent du FBI près de 2000 dollars pour faire sortir le
+       matériel TEMPEST d'Israël, sans disposer pour cela d'une
+       licence. L'équipement aura coûté près de 30 000 dollars
+       à Shaphyr.
+
+       Zajac explique ensuite que l'enquête n'a pas cessé avec
+       l'arrestation de Shaphyr : elle se poursuit.
+
+       * Slashdot dispose d'une discussion courte sur TEMPEST
+	 (19 juillet 1999) avec plusieurs informations fournies
+	 par d'anciens militaires.
+
+       * Berke Durak détient des résultats intéressants ainsi que
+	 de sources de programmes qui démontrent à quel point il
+	 est facile d'utiliser un processeur pour transmettre de
+	 l'information dans la bande radio FM.
+
+       * Des notes intéressantes sont proposées au sein d'une
+	 présentation menée par le professeur Mueller (Moller ?)
+	 datant de la conférence HIP de 1997. Les notes
+	 techniques sont intéressantes.
+
+       * Tempest - een beeldige opsporingsmethode
+	 Un article autrichien de 1997 par Bert-Jaap Koops
+	 dont voici un résumé par un lecteur anonyme:
+
+	 Au sein de son article, le Dr B.J. Koops, un chercheur
+	 de l'université catholique de Brabant et de l'université
+	 technique de Tilburg (toutes deux situées aux Pays-Bas)
+	 explique dans une courte introduction en quoi consiste
+	 le TEMPEST et à quoi il peut servir.
+
+	 Il explique qu'il existe trois méthodes de capture de
+	 l'information: par les câbles, par les radiations émises
+	 directement et les radiations émises par le câble reliant
+	 l'ordinateur à l'écran.
+
+	 Ensuite, il détaille ce qui est légal et ne l'est pas
+	 pour les individus et la police quand il est question
+	 de surveillance TEMPEST. Il parvient à la conclusion
+	 que cet usage est illégal pour les individus particuliers
+	 (à cause d'amendements aux lois qui couvrent les mises
+	 sur écoute) mais tout autant illégal pour la police
+	 (car ils doivent disposer d'une permission explicite
+	 pour le faire bien que le TEMPEST ni la surveillance des
+	 radiations n'est évoquée dans la loi).
+
+	 Il termine son article en proposant une discussion au
+	 parlement, afin de déterminer si la surveillance
+	 d'ordinateurs à distance est légale ou non aux Pays-Bas,
+	 et qu'il s'agit d'une décision avant tout politique.
+
+       * Une entrevue (avril 94) de C'T avec l'expert en
+	 surveillance Hans-Georg Wolf, traitant de l'espionnage
+	 industriel. Plusieurs éléments relatifs aux TEMPEST sont
+	 évoqués. Il y a aussi un autre article qui traite du même
+	 sujet, avec des photos des captures d'écrans obtenues à
+	 distance.
+
+       * 13 novembre 1999 : exemplaire 21 du magazine de hacking SET
+	 (une sorte de Phrack espagnol). Cet article couvre en
+	 longueur le TEMPEST et propose même des circuits à
+	 réaliser. La version espagnole est disponible, et la
+	 traduction via Babelfish permet d'obtenir des séries
+	 d'informations intéressantes (si un lecteur disposant d'une
+	 bonne connaissance de l'espagnol peut nous fournir une
+	 meilleure traduction, n'hésitez pas)
+
+       * 8 novembre 1999 : New Scientist propose un court article
+	 sur le TEMPEST où Markus Kuhn pense que les dispositifs
+	 d'interception verront leur coût réduit à moins de 100
+	 livres anglaises dans les cinq ans à venir (bien que cet
+	 article ne soit pas spécifique au TEMPEST, on y trouve
+	 malgré tout une entrevue avec Ross Anderson). Slashdot
+	 dispose également d'une discussion au sujet de cet
+	 article.
+
+   Brevêts
+
+   Une courte recherche sur le site d'IBM proposant d'effectuer
+   des recherches sur les brevêts permet de découvrir plusieurs
+   brevêts intéressants :
+
+     * brevêt numéro 4965606 : armure de protection d'antenne (1989)
+
+     * brevêt numéro 5165098 : système de protection des équipements
+       numériques contre les accès distants (1992)
+
+     * brevêt numéro 4932057 : transmission parrallèle pour masquer
+       les données radiées (1990)
+
+     * brevêt numéro 5297201 : système de protection contre la
+       détection à distance des données informatiques provenant des
+       émissions TEMPEST (1994)
+
+     * brevêt numéro 5341423 : système de transmission de données
+       masquées (1994)
+
+   Une note sur le brevêt 5297201 : il fait référence au brevêt
+   2476337 qui a été accepté le 1er juillet 1949. Malheureusement,
+   ses détails ne sont pas actuellement disponibles, mais la référence
+   qui remonte à 1949 donne une bonne idée de la date depuis
+   laquelle les militaires étudient les radiations émises par les
+   dispositifs électroniques.
+
+  Sources papier
+
+     * "Cabinets for Electromagnetic Interference/Radio-Frequency
+       Interference and TEMPEST Shielding" par Kenneth F. Gazarek,
+       Data Processing and Communications Security, Volume 9, No. 6
+       de 1985.
+
+     * "Information Warfare" par Winn Schwartau, Thunder's Moth Press,
+       New York, de 1996 (seconde édition)
+
+     Chapître 7, le monde du Dr van Eck, est dédié aux sujet en
+     relation avec le TEMPEST. Il dispose d'une bonne quantité
+     d'informations, mais elles couvrent un éventail large et n'entrent
+     pas trop dans les détails techniques (la seconde édition offre
+     des détails plus nombreux, dont les canons HERF et d'autres
+     sujets, mais rien n'a été ajouté au chapître van Eck).
+     Il s'agit malgré tout d'une excellente lecture, et plusieurs
+     sources sont mentionées dans cette page, et les notes de bas
+     de page.
+
+     * "Computer Security Basics", par Deborah Russell et G.T.
+     Gangem Sr, O'Reilly and Associates, Sebastpol, CA de 1991
+
+     Chapître 10, TEMPEST : un excellent aperçu des risques
+     provoqués par les émanations, et les détails du programme
+     gouvernemental TEMPEST. C'est une lecture indispensable.
+
+     * Nous ne disposons pas de la citation exacte, mais en 1997 le
+       magazine informatique allemand C'T a publié un article qui
+       décrit la construction d'un dispositif de surveillance
+       TEMPEST. Il s'agit d'un ancien téléviseur russse (ils
+       avaient pour particularité de ne pas être limités dans la
+       plage de fréquences qu'ils peuvent percevoir) ainsi qu'un
+       morceau de cuivre pour servir d'antenne. Les testeurs
+       n'ont pas pu cibler de machine en particulier, mais il
+       était possible de capturer l'affichage d'une grande
+       variété d'écrans rencontrés pendant leur déplacement
+       dans un quartier résidentiel. Si vous disposez d'un exemplaire
+       originel de cet article : contactez-nous !
+
+
+
+   EMSEC
+
+   Ceux qui travaillent dans ce domaine n'utilisent plus le terme
+   TEMPEST de manière générique, pour tout ce qui concerne la
+   sécurité affectant ou étant affectée par les radiations. Le mot
+   désormais à la mode est "EMSEC" pour "Emissions Security". Si vous
+   savez lire entre les lignes, le changement de TEMPEST vers EMSEC
+   est assez intéressant. On peut prendre la citation d'un site
+   de l'Air Force à ce sujet :
+
+   "Emission Security (EMSEC), mieux connu sous le terme de TEMPEST,
+   connaît des changements drastiques depuis quelques années. Ces
+   changements ont requis une totale révision des règles et
+   réglements, impliquant toute une nouvelle série de publications.
+   Pendant que ces publications sont en phase de finalisation,
+   nous devons continuer à informer des politiques et procédures
+   de sécurité EMSEC à jour".
+
+   Quels sont les changements drastiques évoqués ? Un peu de
+   spéculation :
+
+   * Des réductions de budget et des directives ont imposé au
+     domaine TEMPEST une nouvelle politique d'application.
+
+   * D'autres types d'émission ont été découvertes et posent
+     une menace importante de sécurité.
+
+   La citation suivante provient du même site :
+
+   "QUE SONT LES EMISSIONS COMPROMETTANTES ?
+   Les émissions compromettantes sont des signaux non-intentionnels,
+   porteurs d'informations sensibles, qui s'ils sont détectés et
+   analysés permettent de découvrir les informations classifiées
+   transmises, reçues, traitées ou gérées par tout système de
+   traitement de l'information".
+
+   Il est curieux que le terme de "radiation électro-magnétique" ne
+   soit pas utilisé dans cette définition. Il est donc probable
+   qu'il existe d'autres formes de signaux que le TEMPEST.
+
+   Ce qui nous amène, logiquement, à HIJACK et NONSTOP.
+
+
+
+   HIJACK et NONSTOP
+
+   Dans notre quête de recherche de matériaux open source concernant
+   TEMPEST, nous avons découvert deux mots clefs souvent utilisés:
+   HIJACK et NONSTOP. Nous ne disposons que de peu d'information
+   à leur sujet :
+
+   * Les références à NONSTOP et HIJACK évoquent des tests, et
+     font leur apparition dans les entraînements TEMPEST, dont la
+     référence est NACSEM 5112. Un niveau d'accès aux informations
+     classifiées est requis pour pouvoir assister à ces cours,
+     et la description du cours du ministère de la défense
+     indiquent : "Ce cours entraînera les étudiants dans leur
+     utilisation des systèmes de détection Honeywell et HLDS,
+     et font partie des besoins de base pour pouvoir assister
+     aux cours NONSTOP et HIJACK, procédures de test".
+
+   * Un glossaire d'entraînement de l'Air Force liste les définitions
+     d'HIJACK et NONSTOP : informations classifiées...
+
+   * Des contre-mesures sont utilisées pour se protéger contre
+     ce que désigne le NONSTOP, la référence étant : NSTISSI 7001.
+
+   * NONSTOP est en existence depuis un long moment.
+     NACSEM-5112 (RP-4) 1, 2, 3 et 4 sont les techniques
+     d'évaluation NONSTOP, classifiées SECRET. Ces techniques
+     datent de 1975.
+
+   Grâce au peu de documents disponibles et publiés sur Internet,
+   nous en savons un peu plus à présent. Bien que la plupart des
+   documents soient classifiés et que les informations sensibles
+   ont été biffées, il reste assez d'indices que l'on peut
+   rassembler, afin de spéculer sur les natures de HIJACK et NONSTOP.
+
+   NONSTOP est un mot de code classifié qui désigne une forme
+   d'émanations compromettantes, qui implique la transmission
+   du signal depuis les dispositifs radio (radios portables,
+   téléphones cellulaires, pager, systèmes d'alarme, téléphones
+   sans-fil, réseaux sans-fil, émissions commerciales AM et FM
+   étant toutefois exclues) à proximité de dispositifs qui
+   traitent ou contiennent des informations classifiées. Il existe
+   des indications précises qui expliquent si le dispositif proche
+   doit être éteint, ou bien à partir de quelle distance minimale
+   il peut être utilisé (PC, imprimante, etc.)
+
+   HIJACK est un mot de code classifié qui désigne, semble-t-il,
+   une forme d'émanations compromettantes, mais qui implique
+   les informations sous forme numériques plutôt qu'électro-
+   magnétiques. L'attaque correspond à peu près au type d'attaque
+   TEMPEST classique, où l'adversaire n'a pas besoin d'être proche
+   du dispositif que l'on veut compromettre. Il faut disposer
+   d'un accès, toutefois, aux lignes de communication (elles
+   peuvent être de nature physique, ou sans-fil). L'adversaire
+   utilise des antennes, des récepteurs, un dispositif d'affichage,
+   un dispositif d'enregistrement et un composant supplémentaire
+   (un système de détection supplémentaire qui semble être aussi
+   sensible qu'onéreux; peu existent et malheureusement nous
+   n'avons pratiquement aucune information sur leur nature).
+   Nous savons en outre que ce type d'équipement demande un très
+   haut degré de connaissances et d'expertise de la part de son
+   manipulateur. Et que nos estimations soient proches ou non,
+   il faut disposer d'un accès aux informations classifiées
+   pour en savoir plus.
+
+
+ 
+  Dispositifs de surveillance
+
+  John Williams (Comsumertronics, PO Box 23097, Albuquerque,
+  NM 87192) propose à la vente le système Van Eck System,
+  un dispositif de surveillance des émanations construit à partir
+  de composants civils. Il détient une vidéo de démonstration,
+  et un livre intitulé "Beyond Van Eck Phreaking". Le site mis
+  à jour de Consumertronics propose d'autres produits tout aussi
+  intéressants (vous pouvez en commander le catalogue papier
+  pour 3 dollars, une ressource intéressante).
+  Nous avons eu l'occasion de discuter par correspondance avec M.
+  Williams, et il a été une grande source de détails techniques sur
+  le fonctionnement de ses produits.
+
+  Ian Murphy, directeur de IAM/Secure Data System, a rédigé un
+  document sur TEMPEST très intéressant, dont une liste de composants
+  que l'on peut acheter chez Radio Shack pour construire son propre
+  récepteur d'émanations.
+
+  Droit de réponse - 15 novembre 1999
+
+  Nous avons reçu un email de Terrance L. Kawles, Esq. (avocat)
+  qui représente Frank Jones de Codex et DataScan. M. Kawles
+  nous explique que dans une note rédigée il y a peu, nous avons
+  fait un commentaire qui s'interroge au sujet de la crédibilité
+  de M. Jones. M. Kawles pense ainsi qu'une campagne est organisée
+  contre la réputation de son client, et que nous participons malgré
+  nous à cette campagne. Dans ma propre note, j'invitais en fait
+  les lecteurs à consulter les archives de USENET afin de forger
+  leur propre avis au sujet de M. Jones : depuis de très nombreuses
+  années, nous avons du "pour et contre" à son sujet et son avocat
+  nous a laissé deux options : "... soit retirer votre note, soit
+  supprimer vos références et liens vers M. Jones et Codex",
+  estimant notre note comme diffamatoire.
+
+  Nous avons décidé de retirer tout lien et toute information 
+  concernant M. Jones et ses produits TEMPEST de cette section.
+  Nous n'avons aucune confiance ni croyance dans les affirmations
+  de son avocat (notre propre avocat ayant confirmé que la note
+  ne contient aucune remarque ou suggestion de diffamation) mais
+  comme il y a un doute et qu'il est possible qu'il fasse l'objet
+  d'une campagne négative, nous préférons ne pas participer à ce
+  type d'activités, si le fait s'avère réel.
+
+  Pour répondre à M. Kawles et son affirmation "Selon les
+  informations dont je dispose, M. Jones vous a aidé en vous
+  fournissant des informations alors que vous débutiez votre
+  étude du TEMPEST, et vous ne l'avez remercié qu'avec un
+  commentaire négatif".
+
+  Ha ! J'aimerais bien voir la moindre preuve de cette affirmation
+  et de cette hypothétique "aide", en me fournissant par exemple
+  le moindre exemple concret provenant d'un échange entre M. Jones
+  et moi-même...
+
+  Mise à jour
+
+  Un article vient d'être publié chez Forbes, le 10 août 2000.
+  Il semble que M. Jones soit désormais coupable et que les
+  documents l'accusant ont fait surface en décembre 2001 ...
+
+
+
+  Sources pour concevoir votre protection
+
+   Après votre lecture du papier de Grady...  
+
+   Si vous êtes habile à manier le fer à souder, Nelson Publishing
+   propose un guide intitulé "EMI/RFI Buyer's Guide". Il s'agit
+   d'une liste de sources compréhensible et étendue qui liste les
+   matériels que l'on peut utiliser pour blinder son matériel contre
+   les émanations, les ferrites et tous les produits en relation avec
+   le traitement des rayonnements et interférences électro-magnétiques.
+   On y trouve même une liste de produits TEMPEST et les adresses
+   des consultants. Malheureusement, la plupart de ces sources
+   ne proposent pas de liens sur Internet. Mais les noms des compagnies,
+   leurs adresses et numéros de téléphone et FAX sont fournis.
+
+   Une autre base de données d'un fabriquant général d'électronique
+   est electroBase. Ils lisent ainsi plus de 7000 fabriquants de
+   composants.
+
+   Il existe au autre produit intéressant nommé "DataStop Security
+   Glass", que son fabriquant propose comme le seul verre capable
+   de protéger contre les émanations électro-magnétiques disponible
+   sur le marché. Il ne contient aucune forme de métal visible, et
+   propose une excellente visibilité. En fait, la FAA utilise ce
+   type de verre dans les fenêtres qui équipent ses tours de 
+   contrôle aérien, bardées d'électronique sensible. Vous pouvez
+   contacter TEMPEST SECURITY SYSTEMS INC. pour plus de détails.
+
+   Mais n'oubliez pas : une bonne protection contre les émanations
+   commence avant tout par la protection de l'environnement.
+   Si vous ne pouvez pas protéger les câbles (lignes téléphoniques,
+   câblage électrique, câbles réseau, etc.) alors tout le cuivre
+   que vous pourrez placer autour de votre PC n'aura pratiquement
+   aucun intérêt, même si vous blindez vos murs avec. Le blindage
+   doit également concerner tout type de câble où de l'information
+   transite.
+
+   *
+
+   Copyright 1996-2003 Joel McNamara
+
+   last update: Thu Aug 14 20:50:51 UTC 2003
+
