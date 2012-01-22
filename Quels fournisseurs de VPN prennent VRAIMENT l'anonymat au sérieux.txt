@@ -1,0 +1,114 @@
+18 oct. 2011
+Quels fournisseurs de VPN prennent VRAIMENT l'anonymat au sérieux?
+(Cet article est originellement paru sur TorrentFreak)
+Le mois dernier, il  est apparu que tous les fournisseurs de VPN n'étaient pas en accord  avec leurs stratégies commerciales, après qu'un membre présumé de Lulzsec fût retrouvé suite à son utilisation des services censément anonymes de HydeMyAss. Nous avons voulu savoir quels sont les fournisseurs de VPN  qui prennent la vie privée au sérieux, ainsi nous avons posé deux  questions très directes aux principaux d'entre eux.  Leurs réponses intéresseront quiconque est concerné par les problématiques d'anonymat.
+Comme précisé dans l'article d'hier (http://torrentfreak.com/vpn-providers-mull-fraudster-database-in-wake-of-lulzec-fiasco-111006/), si un fournisseur de VPN fournit les traces des activités de ses utilisateurs, il est peu probable qu'il puisse tenir sa promesse d'anonymat.
+
+Il y a des dizaines de fournisseurs VPN, et beaucoup annoncent sur leurs sites que l'anonymat est la priorité absolue envers leurs clients. Mais est-ce vraiment le cas ?
+Leurs politiques des confidentialités résisteront-elles à nos tests ? Nous allons bientôt le savoir.
+
+
+Au cours des deux dernières semaines, Torrentfreak a contacté quelques-uns des  fournisseurs de VPN leaders du marché, ceux qui faisaient le plus de pub,  ceux qui faisaient le buzz, les plus utilisés dans le milieu du partage de fichiers et de l'anonymat. Plutôt que d'essayer de déchiffrer leurs  offres commerciales souvent obscures, nous leurs avons posé deux questions directes :
+
+1. Gardez-vous le MOINDRE historique de connexion qui pourrait permettre, à une tierce partie ou à vous-même, de faire correspondre l'adresse IP et l'heure de connexion d'un utilisateur de votre service ? Si oui, quelles informations gardez-vous exactement ?
+
+2. Sous quelle juridiction opère votre entreprise, et sous quelles circonstances exactes allez-vous échanger les informations que vous possédez avec une tierce partie ?
+
+Cet article ne tente pas de montrer la qualité des services actuellement proposés par les fournisseurs listés, ni même de prouver que ces services valent le prix demandé. Nous sommes tous intéressés par cette question : fournissent-ils réellement un service 100% anonyme ainsi qu'ils le clament ?
+Alors voici d'abord les fournisseurs de VPN du monde du partage de fichiers.
+
+Fournisseurs de VPN qui basent leur promo sur le P2P
+
+BTguard
+Réponse à la Q1: "Il est techniquement irréalisable pour nous de conserver des fichiers de logs vu la quantité de données que nous faisons transiter", explique BTguard. "Nous estimons la capacité de stockage journalière des logs nécessaire à 4To par jour".
+
+Réponse à la Q2: "Nous dépendons de la juridiction du Canada. Étant donné que nous n'avons pas de fichiers de logs, nous n'avons aucune information à partager. Nous ne communiquons avec aucune tierce partie. La seule chose qui pourrait nous faire collaborer avec une d'elles serait de recevoir un ordre du tribunal. Nous serions alors obligés de leur indiquer que nous n'avons aucune information. Ce n'est pas arrivé pour le moment."
+ItsHidden
+Réponse à la Q1: "Aucun logs ne sont conservés. Même les logs système qui ne sont pas directement liés aux utilisateurs sont supprimés toutes les heures".
+
+Réponse à la Q2: "La société a récemment été vendue et tombe sous la juridiction des Seychelles. En tant que tel il n'est pas nécessaire de logger au sein de cette juridiction."
+TorrentPrivacy
+Réponse à la Q1: "Nous avons des historiques de connexion, mais nous ne stockons pas les adresses IP. Ces logs sont conservés pendant 7 jours. Cependant, il est impossible de déterminer qui a utilisé le service.
+
+Réponse à la Q2: "Nous avons des serveurs aux Pays-Bas, en Suède, et aux États-Unis, mais notre entreprise est domiciliée aux Seychelles. Nous ne délivrons aucune infirmation à des tierces parties sauf en cas de poursuites contre notre entreprise."
+Ipredator
+Réponse à la Q1: "Nous ne gardons aucunes trace des adresses IP.  nous gardons temporairement les infos de session pendant la connexion, mais c'est tout. Nous avons eu quelques problèmes dus à cette absence de logs, mais ne pas les garder rend la chose plus sécurisée pour nous, dans la mesure où nous ne pouvons délivrer d'informations à quiconque, même accidentellement."
+
+Réponse à la Q2: " Nous tombons - principalement - sous la juridiction suédoise pour nos services. En ce qui concerne notre organisation (qui garde les informations, à qui appartient le service, à qui appartient le serveur, à qui appartient le réseau, etc), les réponses sont intentionnellement variées. Et ce, dans le but de rendre beaucoup plus difficile, voire impossible de nous ennuyer sur le plan juridique."
+"Il est difficile de nous mettre hors ligne, et aucun tribunal ne peut nous forcer à mettre en place des outils de surveillance contre notre gré. Pour l'utilisateur final, c'est tout bénéfice".
+Faceless
+Réponse à la Q1: "Nous ne gardons aucune trace des adresses IP ni des données consultées par nos utilisateurs, donc nous n'avons rien qui pourrait intéresser des tierces parties."
+
+Réponse à la Q2: "Nous possédons des serveurs hébergés aux Pays-Bas, et notre entreprise est localisée à Chypre. Si les autorités voulaient nous contacter, nous leur dirions que nous n'avons aucunes adresses IP ou traces de connexions sauvegardées dans nos systèmes."
+Fournisseurs de VPN généralistes
+
+AirVPN
+Réponse à la Q1: La société ne conserve pas de logs d'identifications.
+
+Réponse à la Q2: "Nous sommes soumis à la règlementation européenne, et plus particulièrement celles de l'Italie (pays où est enregistrée l'entreprise, et où résident les personnes légalement responsables de la protection des données), cependant, la règlementation applicable peut être celle des états membres de l'Union Européenne où sont localisés physiquement les serveurs de notre réseau (il n'y a aucun serveur hébergé en Italie), nous dit AirVPN.
+VPNReactor
+Réponse à la Q1: Seulement durant cinq jours pour contrer les utilisations  abusives[..]. Passés ces cinq jours, nous n’avons plus aucun moyen de  relier une adresse IP à son empreinte temporelle. L'anonymat et la  sécurité sont améliorés, dû au fait que chaque connexion est perdue dans  la foule.
+Les utilisateurs du service gratuit partagent un bloc d'IP lorsqu'ils se connectent via VPNReactor. Donc, à chaque instant, des centaines/milliers des utilisateurs ayant leur connexion active pourraient partager la même IP. Aucun de nos utilisateurs ne se voit spécifiquement assigner une adresse IP.
+
+Réponse à la Q2:  Nous nous efforçons de rester francs et transparents avec nos conditions de rétention de logs, au bénéfice de nos utilisateurs. Les logs examinés par TorrentFreak semblent confirmer qu'aucune donnée personnelle n'est enregistrée.
+"Nous sommes situés aux États-Unis, et sommes donc soumis aux ordres des tribunaux US." poursuit VPNReactor. "Cependant, si une assignation émise sur le sol demande des informations datant de plus de 5 jours, nous ne pouvons absolument pas y répondre, car nos logs auront expiré. Les requêtes provenant de tribunaux extérieurs aux USA sont tout simplement ignorées."
+BlackVPN
+Réponse à la Q1: "Nous ne gardons aucune traces sur les activités de nos utilisateurs, que ce soit les pages consultées ou les informations transférées. Nous employons aussi des logiciels de nettoyages des logs dans nos systèmes, qui enlèvent les IP des logs avant qu'ils soient sauvegardés sur les disques durs", dit l'entreprise à TorrentFreak.
+"Pour des raisons de taxes et d'ordres juridiques, nous conservons les informations de paiement (nom, mail, pays), mais ces informations sont stockées chez un tiers, et donc séparées du reste de BlackVPN."
+BlackVPN nous ont dit qu'ils gardent les noms d'utilisateurs, adresses mails, la durée de connexion et déconnexion à leur service, ainsi que la consommation de bande passante.
+Les logs se déroulent comme suit:
+"Sur nos serveurs «anonymes» (Pays-bas et Lituanie(?)), nous ne gardons rien qui puisse identifier l'utilisateur, mais sur nos serveurs US et Royaume-Uni, où nous n'autorisons pas le partage d’œuvres sous copyright, nous conservons l'IP locale assignée à chaque utilisateur à un moment donné," explique BlackVPN.
+"Pour clarifier, nous n'enregistrons pas l'IP réelle de l'utilisateur, juste l'IP locale dans le sous-réseau, afin de nous mettre en conformité avec les lois locales et le DMCA" (https://fr.wikipedia.org/wiki/DMCA)
+
+Réponse à la Q2: "Nous opérons sous la juridiction des Pays-Bas et nous protégeons farouchement la vie privée et les droits de nos utilisateurs et nous ne divulguerons aucune information sur nos utilisateurs à quiconque, à moins d'y être forcés par injonction policière avec les  documents dûment authentifiés ou un ordre du tribunal. (Dans ce cas, nous n'avons pas vraiment le choix)."
+PrivatVPN
+Réponse à la Q1: «Nous ne conservons AUCUNE trace qui nous permette (ou à une tierce partie) de faire correspondre une adresse IP et un horodatage à un utilisateur de nos services. La seule chose que nous enregistrons sont des e-mails et des noms d'utilisateurs, mais il n'est pas possible de lier une activité sur Internet à un utilisateur."
+Veuillez noter: PrivatVPN offre également l'utilisation d'un serveur américain pour regarder des services comme Hulu. Les traces des IP sont conservées lorsque les utilisateurs utilisent ce service.
+
+Réponse à la Q2: "Dans la mesure où nous n'enregistrons pas les adresses IP [nous n'avons] rien à divulguer. Les circonstances n'ont pas d'importance dans ce cas, nous n'avons aucune information concernant les adresses IP de nos clients."
+Privacy.io
+Réponse à la Q1: "Aucune trace n'est conservée. De ce fait, nous ne sommes pas en mesure de fournir des informations. Nous croyons que si vous n'êtes pas tenus de conserver des traces, alors vous ne le faites pas. Cela peut seulement poser des problèmes, comme vu dans le passé avec des fuites d'informations. Il faudrait que la législation change dans la juridiction dans laquelle nous opérons, pour que l'on bouge. Et si ce n'est pas possible, nous fermerons le service. Pas de compromis."
+
+Réponse à la Q2: "Nous dépendons de plusieurs juridictions pour rendre notre service moins sujet aux attaques sur le plan juridique. Les serveurs sont actuellement basés en Suède. Nous ne partageons pas d'informations car nous n'en avons pas. Nous avons créé ce système car nous croyons que ce n'est qu'en communiquant anonymement, que vous pouvez vous exprimez librement. Dès que vous faîtes des compromis, vous glissez vers la surveillance. Les gens vont demander de plus en plus de rétention d'informations, comme cela s'est vu récemment à travers le monde, dans de nombreux pays. Nous faisons ça car nous y croyons, et pas pour l'argent."
+Mullvad
+Réponse à la Q1: "Non. Et nous ne voyons pas pourquoi quiconque le ferait. Ce serait malhonnête envers nos clients et représenterait un potentiel plus *important* d'ennuis juridiques."
+
+Réponse à la Q2: "La juridiction suédoise. Nous ne voyons pas comment l'état suédois pourrait nous forcer à nous retourner contre nos clients, ça n'est jamais arrivé. Un autre signe que nous prenons au sérieux les informations personnelles de nos clients est que nous acceptons les paiements en cash par courrier et par Bitcoin."
+Cryptocloud
+Réponse à la Q1: "Nous ne gardons aucun log."
+
+Réponse à la Q2: "Nous n' enregistrons rien aucun des usages de nos clients, et il n'y a donc pas de point de comparaison entre les heures et les connexions, les informations de paiements sont séparées", nous ont-ils dit.
+De façon réaliste, à moins que vous opériez à partir d'un des pays de l"axe du mal", les autorités trouveront toujours un moyen de vous coincer" ajoute Cryptcloud.
+"J'ai lu les absurdités comme quoi être en Europe va vous protéger de l'application des lois des États-Unis, a bien fonctionné pour HMA (??) n'est-ce pas? En outre, je suis quasi-sûr que le secret bancaire suisse a été pénétré et historiquement, il était plus solide que les intérêts concernant la vie privée. Le moyen de parer à tout ça c'est tout simplement de ne pas se connecter, point final."
+Fournisseurs de VPN qui gardent des traces, parfois trop
+
+VyprVPN
+VyprVPN est le VPN fourni et propulsé par le service Giganews Usenet, bien qu'il puisse être utilisé séparément. Comme plusieurs autres fournisseurs que nous avons contactés, VyprVPN a accusé réception de nos questions mais ils ne nous ont pas répondu.
+Nous les avons inclus ici car ils sont très connus.
+La  société affirme que la politique d'enregistrement de données "est maintenue à des fins de problèmes de règlements, d'évaluation de l'offre de services, pour les questions en rapport avec les [Conditions de vente] et l'[Acceptation des règles d'utilisation], et pour le traitement des malversations commises à l'aide de notre service. Nous maintenons ce niveau d'information sur une base d'au moins 90 jours par session. " 
+Sur le forum Usenet NZBMatrix plusieurs utilisateurs ont rapporté avoir vu leur service VyprVPN interrompu après que la société ait procédé à un "backlog" des notifications DMCA, qui les ont poussés à appliquer la règle contractuelle "deux avertissements et dehors".
+Donc, VyprVPN garde-t-elle des traces? Vous pariez ?
+SwissVPN
+Nous avons inclus SwissVPN dans notre enquête parce qu'ils sont très connus, relativement bon marché et utilisés par ceux qui ont un budget serré.
+A leur crédit, ils ont été les la plus rapides à nous répondre.
+Ils sont l'une des rares compagnies qui ne font pas de promesse d'anonymat.
+
+Réponse à la Q1: "SwissVPN fonctionne selon les lois des Télécoms et de la protections des données personnelles suisses. Les IP de sessions (pas celles du contenu visité, sites web, mail,etc) sont sauvegardées pendant 6 mois", nous dit l'entreprise.
+
+Réponse à la Q2: L'entreprise répond aux demandes des tierces parties en fonction de la législation suisse.
+StrongVPN
+Cette entreprise n'a pas directement répondu à nos questions, mais nous a renvoyé à sa politique de conservations des logs. 
+StrongVPN ne conserve pas de traces et n'est pas en mesure de faire correspondre à une adresse IP externe à leurs abonnés. Nous les avons inclus ici puisqu'ils semblaient, dans notre enquête, être les fournisseurs les plus agressifs en matière de violations de droits d'auteurs.
+"StrongVPN ne restreint pas l'utilisation du P2P, mais veuillez noter que partager des contenus protégés est interdit, s'il vous plaît ne le faites pas ou nous devrons prendre des mesures contre votre compte" nous ont-ils dit, en ajoutant plus tard dans un courrier séparé: «Avis de StrongVPN: vous ne pouvez PAS distribuer du matériel protégé par droits d'auteurs sur notre réseau. Nous pouvons annuler votre compte dans ce cas. "
+Décevant: fournisseurs de VPN qui ne nous ont tout simplement pas répondu
+
+En plus de ceux cités ci-dessus, TorrentFreak a aussi contacté quelques autres fournisseurs de VPN plutôt connus. Nous ne saurons pas si c'est parce que nos questions étaient trop directes pour pouvoir répondre de manière positive, ou pour d'autres raisons, mais aucun n'a répondu à nos mails, même si certains ont accusé réception de nos questions.
+
+Parmi eux : Blacklogic.com, PureVPN.com, VPNTunnel.se, Bolehvpn.net et Ivacy.com. 
+Si ceux-ci se sentent maintenant capables de nous faire une réponse directe à nos questions, ou si d'autres fournisseurs de VPN voudraient apparaitre dans une future mise à jours, contactez-nous dès à présent avec des réponses directes aux questions ci-dessus. Nos excuses aux fournisseurs qui nous ont contactés à la dernière minute mais il était trop tard pour vous inclure dans cet article - il nous fallait une date butoir.
+
+Épilogue
+
+Lors de la souscription à un fournisseur VPN, il est évident que leur politique de rétention de logs et de protection de la vie privée doivent être lues attentivement. Et lues à nouveau, encore plus attentivement. Beaucoup de ces conditions ne sont pas aussi simplistes qu'il n'y parait (certaines même semblent être délibérément trompeuses), et c'est pourquoi nous avons posé nos propres questions.
+
+Par contraste au pessimisme engendré par le rapport d'hier, et comme nous pouvons le constater d'après la liste ci-dessus, lorsqu'il est question d'offrir un réel anonymat, il existe beaucoup de services disponibles.
